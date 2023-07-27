@@ -9,11 +9,10 @@ CSS
 JavaScript
 
 
-#### 连接地址
+#### Repositories 连接地址
 
-1.  Repositories
-2.  https://gitee.com/linkmagisk/Extremely-fruity.git
-3.  git@gitee.com:linkmagisk/Extremely-fruity.git
+1.  https://gitee.com/linkmagisk/Extremely-fruity.git
+2.  git@gitee.com:linkmagisk/Extremely-fruity.git
 
 #### 使用说明
 
