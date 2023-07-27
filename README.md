@@ -9,7 +9,7 @@ CSS
 JavaScript
 
 
-#### 安装教程
+#### 连接地址
 
 1.  Repositories
 2.  https://gitee.com/linkmagisk/Extremely-fruity.git
