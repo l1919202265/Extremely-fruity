@@ -1,0 +1,68 @@
+.center{
+    width: 1000px;
+    margin: auto;
+    // background-color: orange;
+}
+// 头部动画
+.topActive{
+    animation: indexTop 1s;
+}
+// 
+main{
+    // 头部图片
+    .top{
+        background: url(../css/img/original.jpg) -200px;
+        overflow: hidden;
+        height: 300px;
+        .center{
+            color: white;
+            text-align: right;
+            h2{
+                font-size: 34px;
+                margin: 15px;
+                line-height: 1.6;
+            }
+            p{
+                span{
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    background-color: #F9D29A;
+                    margin: 5px 5px;
+                    display: inline-block;
+                }
+
+            }
+            .time{
+                font-size: 18px;
+                padding: 20px 0 16px 0;
+                margin-bottom: 10px;
+            }
+            button{
+                width: 242px;
+                height: 48px;
+                text-align: center;
+                display: inline-block;
+                line-height: 48px;
+                font-size: 24px;
+                background-color: #FE5341;
+                border-radius: 3px;
+                cursor: pointer;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+// 动画
+@keyframes indexTop {
+    0% {
+        transform: translate(800px,-800px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
