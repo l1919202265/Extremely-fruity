@@ -4,11 +4,72 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/play.css">
         <title>酷玩</title>
     </head>
 
     <body>
+        <iframe src="./header.html" frameborder="0" scrolling="no"></iframe>
+        <div class="play">
+            <p>发现酷玩</p>
+            <ul>
+                <li>
+                    <a href="#">最新</a>
+                </li>
+                <li>
+                    <a href="#">最热</a>
+                </li>
+                <li>
+                    <a href="#">品类</a>
+                </li>
+            </ul>
+            <div class="playNew">
+                <ul class="playNewList">
 
+                </ul>
+            </div>
+        </div>
+        <iframe src="./footer.html" frameborder="0" scrolling="no"></iframe>
     </body>
 
 </html>
+<script src="./js/axios.min.js"></script>
+<script>
+    axios.get('http://127.0.0.1:3000/play/new', {
+
+    }).then(res => {
+        data = res.data
+        showData(data);
+    })
+
+    showData = data => {
+        var str = '';
+        var playNewList = document.getElementsByClassName('playNewList')[0];
+        console.log(data);
+        console.log(playNewList);
+        for (var i = 0; i < data.length; i++) {
+            for (var j = 0; j < data[i].length; j++) {
+                if (data[i][j].description == undefined) {
+                    data[i][j].description = '全新智能眼镜';
+                }
+                dataItem = data[i][j];
+                console.log(dataItem);
+                str += `
+                        <li>
+                            <img src="${dataItem.img}" />
+                            <p>${dataItem.description}</p>
+                            <span>${dataItem.text}</span>
+                            <div>
+                                <span>${dataItem.price}</span>
+                                <span>${dataItem.like}</span>
+                                <span>${dataItem.words}</span>
+                            </div>
+                        </li>
+                        `
+                // console.log(str);
+                playNewList.innerHTML = str;
+            }
+        }
+    }
+</script>
