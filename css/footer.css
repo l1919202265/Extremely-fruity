@@ -1,0 +1,62 @@
+footer {
+  background-color: #505050;
+  padding: 40px 0 15px;
+}
+footer .center {
+  width: 1000px;
+  margin: auto;
+}
+footer .center .copy {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 13px;
+  color: #a3a3a3;
+}
+footer .center .fot-ul {
+  display: flex;
+  padding: 15px;
+}
+footer .center .fot-ul .fot-0 {
+  padding: 15px;
+  box-sizing: border-box;
+  flex: 1;
+}
+footer .center .fot-ul .fot-0 span {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+footer .center .fot-ul .fot-0 a {
+  font-size: 13px;
+  color: #a3a3a3;
+}
+footer .center .fot-ul .fot-1 img {
+  width: 160px;
+}
+footer .center .fot-ul .fot-2 img {
+  margin-bottom: 20px;
+}
+footer .center .fot-ul .fot-2 p {
+  font-size: 13px;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+footer .center .fot-ul .fot-3 div {
+  display: flex;
+  flex-direction: column;
+}
+footer .center .fot-ul .fot-3 div a {
+  margin-bottom: 10px;
+}
+footer .center .fot-ul .fot-4 {
+  flex: 1.3;
+}
+footer .center .fot-ul .fot-4 div ul li {
+  display: flex;
+  text-align: left;
+}
+footer .center .fot-ul .fot-4 div ul li a {
+  margin-right: 10px;
+  width: 70px;
+}
