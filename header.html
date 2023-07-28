@@ -8,11 +8,36 @@
         <title>登录</title>
         <style>
             header nav {
+                height: 52px;
                 display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border: 1px solid black;
+            }
+
+            header nav img {
+                width: 132px;
+                height: 100%;
             }
 
             header nav ul {
+                width: 50%;
+                height: 100%;
                 display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: skyblue;
+            }
+
+            header nav .container {
+                display: flex;
+                align-items: center;
+            }
+
+            header nav .container .search {
+                width: 40px;
+                height: 40px;
+                background-color: red;
             }
         </style>
     </head>
@@ -28,10 +53,10 @@
                     <li>试用</li>
                     <li>报告</li>
                 </ul>
-                <div class="search">
-
+                <div class="container">
+                    <div class="search"></div>
+                    <a href="#">登录</a>
                 </div>
-                <a href="#"><button>登录</button></a>
             </nav>
         </header>
     </body>
