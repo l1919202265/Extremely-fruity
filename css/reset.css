@@ -1,37 +1,72 @@
 /* 基础设置 */
-body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
     margin: 0;
     padding: 0;
 }
 
-ul,ol {
+ul,
+ol {
     list-style: none;
 }
 
 img {
     /* 底部留白 */
     display: block;
-	border:0;
+    border: 0;
     transition: transform 0.3s;
 
 }
 
-b,strong {
+b,
+strong {
     font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     /* 父元素字号的百分比 */
     font-size: 100%;
     font-weight: normal;
 }
 
-i,em {
+i,
+em {
     /* 不倾斜 */
     font-style: normal;
 }
 
-u,ins,s,del {
+u,
+ins,
+s,
+del {
     /* 去掉中划线和下划线 */
     text-decoration: none;
 }
@@ -44,21 +79,19 @@ table {
     border-collapse: collapse;
 }
 
-td,th {
+td,
+th {
     border: 1px solid #999;
 }
 
-input,button {
+input,
+button {
     /* 去掉轮廓线 */
     outline: none;
-    border:none;
+    border: none;
 }
 
 /* 风格设置 */
-body {
-    font: 12px/1.5 "Microsoft YaHei", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
-    color: #333;
-}
 
 a {
     text-decoration: none;
@@ -66,7 +99,7 @@ a {
 }
 
 a:hover {
-    color:#DD302D;
+    color: #DD302D;
     text-decoration: none;
 }
 
@@ -83,10 +116,10 @@ a:hover {
     display: block;
     clear: both;
 }
+
 /* 点击图片透明度 */
-img:hover{
+img:hover {
     opacity: .8;
     transform: scale(1.05);
     box-shadow: 0px 0px 5px 5px gray;
 }
-
