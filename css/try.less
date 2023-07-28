@@ -77,10 +77,15 @@
 
 }
 
+.public {
+    height: 1800px;
+    // background-color: antiquewhite;
+}
+
 .trial {
     width: 100%;
-    // height: 1000px;
-    background-color: #F7F7F7;
+    height: 1400px;
+    // background-color: #e01f1f;
 
     .item {
         width: 1000px;
@@ -216,4 +221,143 @@
 
 .red {
     border-bottom: 4px solid #FE5431;
+}
+
+body {
+    position: relative;
+}
+
+iframe:nth-of-type(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 403px;
+
+
+
+    /* 调整高度根据需要 */
+}
+
+.pantent {
+    display: none;
+}
+
+
+// 体验师专享
+.pantent {
+    height: 2130px;
+    width: 1080px;
+    margin: auto;
+
+
+
+
+
+    .only {
+        width: 100%;
+        height: 1400px;
+        // background-color: #e01f1f;
+
+        .item {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            text-align: center;
+
+
+
+            li {
+                height: 285px;
+                width: 220px;
+                // background-color: #FE5431;
+                border: 1px solid rgb(200, 197, 197);
+                border-radius: 5px;
+
+
+                position: relative;
+                margin-left: 40px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+
+                    img {
+                        width: 220px;
+                        border-radius: 5px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        text-align: center;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+
+                        &:nth-of-type(1) {
+                            font-weight: 700;
+                        }
+
+                        span {
+                            color: red;
+
+                        }
+                    }
+
+                    &>span {
+                        font-size: 12px;
+                        color: #ccc;
+                        border: 1px solid #ccc;
+                        padding: 2px 6px;
+                        border-radius: 3px;
+                        display: inline-block;
+                        margin-bottom: 10px;
+
+                        &:nth-of-type(2) {
+                            margin-left: 7px;
+                        }
+                    }
+
+
+
+                    .num {
+                        font-size: 14px;
+                        color: #ccc;
+                        margin-top: 7px;
+                    }
+
+                    .sf {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: #FE5431;
+                        color: white;
+                        border-radius: 0px 5px 0px 7px;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .more {
+            text-align: center;
+            margin-top: 30px;
+
+
+
+            a {
+                text-decoration: none;
+                color: rgb(12, 12, 12);
+
+
+            }
+        }
+    }
 }

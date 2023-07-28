@@ -6,15 +6,15 @@ window.onload = function () {
     })
         .then(function (res) {
             var navlist = res.data;
-            console.log('--------');
-            console.log(navlist);
+            // console.log('--------');
+            // console.log(navlist);
             var nav = document.querySelector('.item');
             // console.log(nav);
             var lis = document.createElement('li');
             nav.appendChild(lis);
             var str = '';
             navlist.forEach(function (item) {
-                console.log(item.txt); // 输出导航项的文本信息
+                // console.log(item.txt); 
 
                 str += `<li><a href="./trial.html">
                  <img src="${item.img}" alt="">
@@ -42,15 +42,15 @@ window.onload = function () {
     })
         .then(function (res) {
             var navlist = res.data;
-            console.log('--------');
-            console.log(navlist);
+            // console.log('--------');
+            // console.log(navlist);
             var nav = document.querySelector('.in');
             // console.log(nav);
             var lis = document.createElement('li');
             nav.appendChild(lis);
             var str = '';
             navlist.forEach(function (item) {
-                console.log(item.txt); // 输出导航项的文本信息
+                // console.log(item.txt);
 
                 str += `<li><a href="./trial.html">
                      <img src="${item.img}" alt="">
@@ -74,15 +74,15 @@ window.onload = function () {
     })
         .then(function (res) {
             var navlist = res.data;
-            console.log('--------');
-            console.log(navlist);
+            // console.log('--------');
+            // console.log(navlist);
             var nav = document.querySelector('.no');
             // console.log(nav);
             var lis = document.createElement('li');
             nav.appendChild(lis);
             var str = '';
             navlist.forEach(function (item) {
-                console.log(item.txt); // 输出导航项的文本信息
+                // console.log(item.txt);
 
                 str += `<li><a href="./trial.html">
                          <img src="${item.img}" alt="">
@@ -112,15 +112,15 @@ window.onload = function () {
     })
         .then(function (res) {
             var navlist = res.data;
-            console.log('--------');
-            console.log(navlist);
+            // console.log('--------');
+            // console.log(navlist);
             var nav = document.querySelector('.on');
             // console.log(nav);
             var lis = document.createElement('li');
             nav.appendChild(lis);
             var str = '';
             navlist.forEach(function (item) {
-                console.log(item.txt); // 输出导航项的文本信息
+                // console.log(item.txt); 
 
                 str += `<li><a href="./trial.html">
                          <img src="${item.img}" alt="">
@@ -142,76 +142,41 @@ window.onload = function () {
 
 
 
-    // axios({
-    //     method: 'get',
-    //     url: 'http://127.0.0.1:3000/useing/master',
-    // })
-    //     .then(function (res) {
-    //         var navlist = res.data;
-    //         console.log('--------');
-    //         console.log(navlist);
-    //         var nav = document.querySelector('.item');
-    //         // console.log(nav);
-    //         var lis = document.createElement('li');
-    //         nav.appendChild(lis);
-    //         var str = '';
-    //         navlist.forEach(function (item) {
-    //             console.log(item.txt); // 输出导航项的文本信息
+    axios({
+        method: 'get',
+        url: 'http://127.0.0.1:3000/useing/master',
+    })
+        .then(function (res) {
+            var navlist = res.data;
+            console.log('--------');
+            console.log(navlist);
+            var nav = document.querySelector('.tys');
+            // console.log(nav);
+            var lis = document.createElement('li');
+            nav.appendChild(lis);
+            var str = '';
+            navlist.forEach(function (item) {
+                console.log(item.txt); // 输出导航项的文本信息
 
-    //             str += `<li><a href="./trial.html">
-    //                  <img src="${item.img}" alt="">
-    //                 <p>${item.text}</p>
-    //                 <span>${item.totalnum}</span>
-    //                 <span>${item.num}台</span>
-    //                 <p><span>${item.apply}</span>申请</p>
-    //                 <p class="num">报告数量：8</p>
-    //                 <span class="sf">${item.info_ty}</span></a>
-    //                 </li>`
+                str += `<li><a href="./trial.html">
+                     <img src="${item.img}" alt="">
+                    <p>${item.text}</p>
+                    <span>${item.totalnum}</span>
+                    <span>${item.num}台</span>
+                    <p><span>${item.apply}</span>申请</p>
+                    <p class="num">报告数量：8</p>
+                    <span class="sf">${item.info_ty}</span></a>
+                    </li>`
 
-    //         });
-    //         nav.innerHTML = str;
-    //     })
-    //     .catch(function (error) {
-    //         console.log('请求发生错误:', error);
-    //     });
+            });
+            nav.innerHTML = str;
+        })
+        .catch(function (error) {
+            console.log('请求发生错误:', error);
+        });
 }
 
 
-// function getIndexHead() {
-
-//     axios({
-//         method: 'get',
-//         url: 'http://127.0.0.1:3000/useing/public',
-//     })
-//         .then(function (res) {
-//             var navlist = res.data;
-//             console.log('--------');
-//             console.log(navlist);
-//             var nav = document.querySelector('.item');
-//             // console.log(nav);
-//             var lis = document.createElement('li');
-//             nav.appendChild(lis);
-//             var str = '';
-//             navlist.forEach(function (item) {
-//                 console.log(item.txt); // 输出导航项的文本信息
-
-//                 str += `<li><a href="./trial.html">
-//                      <img src="${item.img}" alt="">
-//                     <p>${item.text}</p>
-//                     <span>${item.totalnum}</span>
-//                     <span>${item.num}台</span>
-//                     <p><span>${item.apply}</span>申请</p>
-//                     <p class="num">报告数量：8</p>
-//                     <span class="sf">${item.info_ty}</span></a>
-//                     </li>`
-
-//             });
-//             nav.innerHTML = str;
-//         })
-//         .catch(function (error) {
-//             console.log('请求发生错误:', error);
-//         });
-// }
 
 
 
