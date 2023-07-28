@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navs {
+  width: 1000px;
+  height: 50px;
+  background-color: aquamarine;
+  margin: auto;
+}
+.navs ul {
+  list-style: none;
+  border-top: 1px solid gray;
+}
+.navs ul li {
+  width: 165px;
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  line-height: 49px;
+}
+.navs ul li:nth-of-type(1) {
+  margin-left: 170px;
+}
