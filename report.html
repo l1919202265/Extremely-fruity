@@ -7,6 +7,13 @@
     <title>报告</title>
     <link rel="stylesheet" href="./css/report.css">
     <iframe src="./footer.html" width="100%"></iframe>
+    <style>
+        .content>.leftSpan>span:nth-of-type(3) {
+            color: rgb(121, 119, 119);
+            margin-left: 6px;
+            font-size: 13px;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,13 +51,28 @@
             <!-- 最新左 -->
             <div class="left">
                 <ul class="bull">
-                    <li>
-                        <div class="img">
-                            <img src="./img/bg1.jpg" alt="">
-                            <div class="mb">
-                                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    <li><a href="">
+                            <div class="img">
+                                <div class="mb"></div>
+                                <img src="./img/bg1.jpg" alt="">
+                                <div class="content">
+                                    <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                                    <div class="leftSpan">
+                                        <span></span>
+                                        <!-- <p>苏苏</p> -->
+                                        <span>苏苏</span>
+                                        <span>2016-01-25</span>
+                                    </div>
+                                    <div class="rightSpan">
+                                        <span>3</span>
+                                        <span>3</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="lecture">
+                                <p>关于格林威特空气净化器还有 4 篇报告，点击查看</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
 
@@ -77,3 +99,5 @@
 </body>
 
 </html>
+<script src="./js/axios.min.js"></script>
+<script src="./js/report.js"></script>
