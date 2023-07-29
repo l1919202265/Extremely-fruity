@@ -109,7 +109,7 @@ topBtn.onclick=function(){
         var str=''
         
         for(var i=0;i<4;i++){
-            console.log(data[i]);
+            // console.log(data[i]);
             str+=`<li>
             <img src="${data[i].img}" alt="#">
                 <div class="show-main-item">
@@ -127,4 +127,62 @@ topBtn.onclick=function(){
         ul.innerHTML=str;
     }
 })()
+// 发现酷玩
+var lod=document.querySelector(".lod")
+var groud=0
+var loding=document.querySelector('.loding')
+lod.addEventListener('click',function(){
+    lod.style.display='none';
+    loding.style.display='block';
+    setTimeout(() => {
+        loding.style.display='none';
+        lod.style.display='block';
+        showImg()
+    }, 1000);
+}) 
+showImg()
+function showImg(){
+    axios.get('http://127.0.0.1:3000/play/new').then(res=>{
+        show(res.data)
+    })
+    
+    function show(data){
+        var ul=document.querySelector('.find-main')
+        var number=0;
+        var str='';
+        if(groud==data.length-1){
+            lod.style.display='none';
+            loding.style.display='none';
+        }
+            for(var i=0;i<data.length;i++){
+                data[groud].forEach((arra,ind)=>{
+                    
+                    if (number >= 8) { 
+                        return; // 超过8个则结束循环
+                    }
+                    
+                    str+=`
+                    <li>
+                            <img src="${arra.img}" alt="#">
+                                <div class="find-main-item">
+                                    <p>${arra.text}
+                                        <span>可以测定食物成分及营养</span>
+                                    </p>
+                                    <div class="find-xia">
+                                        <span class="find-red">${arra.price}</span>
+                                        <div class="find-ri">
+                                            <span class="zan">${arra.like}</span>
+                                            <span class="xinxi">${arra.words}</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                    `
+                    number++;
+            });
+            }
+        groud++
+        ul.innerHTML+=str
+    }
+}
 // 
