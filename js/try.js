@@ -148,8 +148,8 @@ window.onload = function () {
     })
         .then(function (res) {
             var navlist = res.data;
-            console.log('--------');
-            console.log(navlist);
+            // console.log('--------');
+            // console.log(navlist);
             var nav = document.querySelector('.tys');
             // console.log(nav);
             var lis = document.createElement('li');
@@ -194,7 +194,7 @@ for (var i = 0; i < b.length; i++) {
         for (var j = 0; j < b.length; j++) {
             b[j].style.display = 'none';
             b[index].style.display = 'block';
-            a[j].classList.remove('red')
+            a[j].classList.remove('red');
             a[index].classList.add('red')
         }
 
