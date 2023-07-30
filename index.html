@@ -1,19 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>极果</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/轮播图 js css/swiper-bundle.min.css">
+    <title>极果</title>
+</head>
+<style>
+    /* 轮播图样式 */
+    .swiper {
+        width: 100%;
+    }
+    .swiper-button-prev{
+        position: absolute;
+        top: 234px;
+        left: 375px;
+        color: #666;
+    }
+    .swiper-button-next{
+        position: absolute;
+        top: 234px;
+        right: 375px;
+        color: #666;
+    }
+</style>
 
-    <body>
-
-    </body>
+<body>
+    <main>
+        <!-- 头部 背景 -->
+        <div class="top">
+            <div class="center topActive">
+                <h2>幻响小贝HiFi2.1音箱</h2>
+                <p><span>126人申请</span> <span>￥599</span> <span>20台</span></p>
+                <p class="time">申请时间剩余：13天5小时37分钟</p>
+                <button class="btn"><a href="#">立即申请</a></button>
+            </div>
+        </div>
+        <section class="hot-box">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+        </section>
+        <!-- 报告精选 -->
+        <section class="report-box">
+            <div class="center">
+                <div class="report-top">
+                    <h2>报告精选</h2>
+                    <a href="#">查看更多</a>
+                </div>
+                    <ul class="report-main">
+                    </ul>
+            </div>
+        </section>
+        <!-- 导购精选 -->
+        <section class="show-box">
+            <div class="center">
+                <div class="show-top">
+                    <h2>报告精选</h2>
+                    <a href="#">查看更多</a>
+                </div>
+                    <ul class="show-main">
+                    </ul>
+            </div>
+        </section>
+        <!-- 发现酷玩 -->
+        <section class="find-box">
+            <div class="center">
+                <div class="find-top">
+                    <h2>报告精选</h2>
+                    <a href="#">查看更多</a>
+                </div>
+                    <ul class="find-main">
+                      
+                    </ul>
+                    <p class="lod">点击加载更多</p>
+                    <p class="loding" style="display: none;">正在加载中</p>
+            </div>
+            
+        </section>
+    </main>
+</body>
 
 </html>
+<script src="./axiosjs/axios.js"></script>
+<script src="./轮播图 js css/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
 <script>
-
+    var mySwiper = new Swiper('.swiper', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: false, // 循环模式选项
+        // 如果需要前进后退按钮
+        autoplay:true,//自动切换
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })        
 </script>

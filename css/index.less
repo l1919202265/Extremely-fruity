@@ -1,0 +1,370 @@
+.center{
+    width: 1000px;
+    margin: auto;
+    // background-color: orange;
+}
+// 动画
+@keyframes indexTop {
+    0% {
+        transform: translate(800px,-800px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+// 头部动画
+.topActive{
+    animation: indexTop 1s;
+}
+
+// 红色 span
+.red{
+    color: red;
+    margin-bottom: 15px;
+    span{
+        border: 1px solid red;
+        display: inline-block;
+        padding: 2px 10px;
+        font-size: 13px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+}
+// 绿色
+.green{
+    color: #80c269;
+    margin-bottom: 15px;
+    span{
+        border: 1px solid #80c269;
+        display: inline-block;
+        padding: 2px 10px;
+        font-size: 13px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+}
+
+// 
+main{
+    // 头部图片
+    .top{
+        background: url(../css/img/original.jpg) -200px;
+        overflow: hidden;
+        height: 300px;
+        .center{
+            color: white;
+            text-align: right;
+            h2{
+                font-size: 34px;
+                margin: 15px;
+                line-height: 1.6;
+            }
+            p{
+                span{
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    background-color: #F9D29A;
+                    margin: 5px 5px;
+                    display: inline-block;
+                }
+
+            }
+            .time{
+                font-size: 18px;
+                padding: 20px 0 16px 0;
+                margin-bottom: 10px;
+            }
+            button{
+                width: 242px;
+                height: 48px;
+                text-align: center;
+                display: inline-block;
+                line-height: 48px;
+                font-size: 24px;
+                background-color: #FE5341;
+                border-radius: 3px;
+                cursor: pointer;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    // 热门试用
+    .hot-box{
+        margin-bottom: 40px;
+        .title{
+            margin: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .swiper{
+            .center{
+                overflow: hidden;
+                .swi-top{
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    height: 290px;
+                    li{
+                        border: 1px solid #999;
+                        border-radius: 3px;
+                        width: 220px;
+                        img{
+                            width: 220px;
+                            height: 130px;
+                        }
+                        .swi-xia{
+                            padding: 12px;
+                            box-sizing: border-box;
+                            h2{
+                                font-size: 16px;
+                                height: 45px;
+                                font-weight: bold;
+                                white-space: pre-wrap; 
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                
+                                margin-bottom: 10px;
+                            }
+                            .apply{
+                                span{
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 报告精选
+    .report-box{
+        background-color: #F7F7F7;
+        padding-bottom: 40px;
+        .report-top{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                padding: 18px 0 16px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a{
+                padding: 18px 20px 16px;
+                background: url(../css/img/readMore.png)no-repeat 88px 25px;
+            }
+        }
+        .report-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                width: 220px;
+                cursor: pointer;
+                border: 1px solid #999;
+                background-color: white;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                img{
+                    width: 220px;
+                }
+                .report-main-item{
+                    padding: 10px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    height: 87px;
+                    color:  #474747;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        margin-bottom: 10px;
+                        height: 38px;
+                        overflow: hidden;
+                    }
+                    .report-xia{
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            color: #a3a3a3;
+                            font-size: 12px;
+                        }
+                        .zan,.xinxi{
+                            padding-left: 15px;
+                        }
+                        .zan{
+                            background:url(../css/img/use5.png)no-repeat ;
+                            background-size: 14px 14px;
+
+                        }
+                        .xinxi{
+                            background: url(../css/img/reply.png) no-repeat;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    // 导购精选
+    .show-box{
+        background-color: white;
+        padding-bottom: 40px;
+        .show-top{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                padding: 18px 0 16px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a{
+                padding: 18px 20px 16px;
+                background: url(../css/img/readMore.png)no-repeat 88px 25px;
+            }
+        }
+        .show-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                width: 220px;
+                cursor: pointer;
+                // border: 1px solid #999;
+                    // border-bottom: none;
+                background-color: white;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                
+                img{
+                    width: 220px;
+                }
+                .show-main-item{
+                    background: url(../css/img/listbg.jpg)no-repeat left bottom;
+                    padding: 10px;
+                    background-size: 221px 19px;
+                    padding-bottom: 30px;
+                    
+                    // box-sizing: border-box;
+                    font-size: 14px;
+                    // height: 87px;
+                    color:  #474747;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        margin-bottom: 10px;
+                        height: 38px;
+                        overflow: hidden;
+                    }
+                    .show-xia{
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        .zan,.xinxi{
+                            padding-left: 15px;
+                        }
+                        .zan{
+                            background:url(../css/img/use5.png)no-repeat ;
+                            background-size: 14px 14px;
+
+                        }
+                        .xinxi{
+                            background: url(../css/img/reply.png) no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 发现酷玩
+    .find-box{
+        background-color: #F7F7F7;
+        padding-bottom: 40px;
+        .lod{
+            color: red;
+            text-align: center;
+            padding-left: 30px;
+            cursor: pointer;
+            background: url(../css/img/more.png) no-repeat 445px 9px;
+        }
+        .loding{
+            color: red;
+            text-align: center;
+            padding-left: 30px;
+            cursor: pointer;
+            background: url(../css/img/loading-icon.gif) no-repeat 445px;
+        }
+        .find-top{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                padding: 18px 0 16px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a{
+                padding: 18px 20px 16px;
+                background: url(../css/img/readMore.png)no-repeat 88px 25px;
+            }
+            
+        }
+        .find-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                width: 220px;
+                cursor: pointer;
+                border: 1px solid #ebe8e8;
+                background-color: white;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                img{
+                    width: 220px;
+                }
+                .find-main-item{
+                    padding: 10px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    height: 87px;
+                    color:  #474747;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        height: 38px;
+                        overflow: hidden;
+                        span{
+                        margin-bottom: 20px;
+                            color: #999;
+                            display: inline-block;
+                        }
+                    }
+                    .find-xia{
+                        display: flex;
+                        justify-content: space-between;
+                        .find-red{
+                            color: red;
+                            font-size: 16px;
+                        }
+                        .zan,.xinxi{
+                            padding-left: 15px;
+                        }
+                        .zan{
+                            background:url(../css/img/use5.png)no-repeat ;
+                            background-size: 14px 14px;
+                        }
+                        .xinxi{
+                            background: url(../css/img/reply.png) no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
