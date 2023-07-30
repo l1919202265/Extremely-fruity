@@ -1,0 +1,72 @@
+main {
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+main section {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+main section aside {
+  flex: 1;
+  background-color: #F3F3F3;
+  margin-right: 30px;
+  padding: 25px 20px;
+  border-radius: 5px;
+  text-indent: 20px;
+  height: 320px;
+}
+main section aside h2 {
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+}
+main section aside dl {
+  color: #444;
+  margin-bottom: 30px;
+}
+main section aside dt {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+main section aside dd {
+  text-indent: 40px;
+  margin-bottom: 8px;
+}
+main section article {
+  flex: 2.5;
+  background-color: #F3F3F3;
+  padding: 25px 33px;
+  border-radius: 5px;
+  color: #444;
+}
+main section article h2 {
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+}
+main section article h3 {
+  font-size: 16px;
+  padding: 25px 0 20px;
+  font-weight: bold;
+}
+main section article p {
+  margin-bottom: 5px;
+  line-height: 30px;
+}
+main section article dl dt {
+  font-size: 20px;
+  padding: 18px 0 16px;
+  font-weight: bold;
+}
+main section article dl dd {
+  text-indent: 20px;
+  margin-bottom: 10px;
+}

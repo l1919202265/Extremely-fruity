@@ -10,27 +10,6 @@
     transform: translate(0);
   }
 }
-<<<<<<< HEAD
-=======
-.red {
-  color: red;
-}
-.red span {
-  border-radius: 5px;
-  border: 1px solid red;
-  padding: 5px;
-  font-size: 12px;
-}
-.green {
-  color: green;
-}
-.green span {
-  border-radius: 5px;
-  border: 1px solid green;
-  padding: 5px;
-  font-size: 12px;
-}
->>>>>>> dev-LiHe
 .topActive {
   animation: indexTop 1s;
 }
@@ -100,7 +79,6 @@ main .top .center button {
 main .top .center button a {
   color: white;
 }
-<<<<<<< HEAD
 main .hot-box {
   margin-bottom: 40px;
 }
@@ -358,42 +336,4 @@ main .find-box .find-main li .find-main-item .find-xia .zan {
 }
 main .find-box .find-main li .find-main-item .find-xia .xinxi {
   background: url(../css/img/reply.png) no-repeat;
-=======
-main section .swiper-slide .center {
-  overflow: hidden;
-}
-main section .swiper-slide .center ul {
-  display: flex;
-  height: 315px;
-  justify-content: space-between;
-}
-main section .swiper-slide .center ul li {
-  height: 290px;
-  text-align: center;
-  width: 220px;
-  overflow: hidden;
-  border: 1px solid #999;
-  border-radius: 5px;
-}
-main section .swiper-slide .center ul li img {
-  height: 130px;
-}
-main section .swiper-slide .center ul li .swi-base {
-  padding: 5px;
-  box-sizing: border-box;
-}
-main section .swiper-slide .center ul li .swi-base h2 {
-  font-size: 16px;
-  height: 48px;
-  font-weight: bold;
-}
-main section .swiper-slide .center ul li .swi-base .swi-p {
-  margin-bottom: 15px;
-}
-main section .swiper-slide .center ul li .swi-base .apply {
-  margin-bottom: 10px;
-}
-main section .swiper-slide .center ul li .swi-base .apply span {
-  color: red;
->>>>>>> dev-LiHe
 }
