@@ -1,4 +1,6 @@
 body {
+    background-color: rgb();
+
     iframe:nth-of-type(1) {
         width: 100%;
         height: 66px;
@@ -55,16 +57,42 @@ body {
 
                 li {
                     width: 220px;
-                    height: 200px;
+                    height: 230px;
                     margin: 10px 15px;
                     // display: inline-block;
                     border-radius: 10px;
                     overflow: hidden;
-                    background-color: palegoldenrod;
+                    // background-color: palegoldenrod;
 
                     img {
                         width: 220px;
                         height: 130px;
+                    }
+
+                    p {
+                        padding: 5px 10px;
+                    }
+
+                    &>span {
+                        display: flex;
+                        padding: 0 10px;
+                        box-sizing: border-box;
+                        justify-content: flex-start;
+                        width: 100%;
+                        color: gray;
+                        font-size: 12px;
+                    }
+
+                    &>.price {
+                        display: flex;
+                        padding: 10px 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    &>.price>div:nth-of-type(1)>span {
+                        color: red;
+                        font-size: 15px;
                     }
                 }
             }
