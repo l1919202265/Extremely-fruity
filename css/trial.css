@@ -72,24 +72,17 @@ header nav .container .loginbtn:hover {
   color: white;
   background-color: #fe5341;
 }
-iframe {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 403px;
-  /* 调整高度根据需要 */
-}
 .img {
   width: 100%;
   height: 300px;
-  background: url(img/original.jpg) no-repeat -144px 0px;
+  background: url(img/original.jpg) no-repeat -210px 0px;
   position: relative;
 }
 .img .content {
   width: 350px;
   height: 230px;
   position: absolute;
-  right: 120px;
+  right: 252px;
   top: 40px;
 }
 .img .content h2 {
@@ -129,4 +122,285 @@ iframe {
   font-size: 24px;
   line-height: 24px;
   margin-left: 100px;
+}
+.flow {
+  width: 100%;
+  height: 100px;
+  background-color: #F0F0F0;
+}
+.flow ul {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  list-style: none;
+}
+.flow ul li {
+  float: left;
+  width: 185px;
+  height: 74%;
+  margin-top: 19px;
+  position: relative;
+}
+.flow ul li span {
+  font-size: 12px;
+  color: gray;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  padding-bottom: 2px;
+}
+.flow ul li:nth-of-type(1) {
+  width: 120px;
+  height: 64%;
+  border-left: 5px solid #eb1b1b;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+.flow ul li:nth-of-type(2) {
+  background: url(img/use1.png) no-repeat 7px 3px;
+}
+.flow ul li:nth-of-type(2) span {
+  border-bottom: 2px solid red;
+}
+.flow ul li:nth-of-type(3) {
+  background: url(img/use2.png) no-repeat 7px 3px;
+}
+.flow ul li:nth-of-type(4) {
+  background: url(img/use3.png) no-repeat 7px 3px;
+}
+.flow ul li:nth-of-type(5) {
+  background: url(img/use4.png) no-repeat 7px 3px;
+}
+.flow ul li:nth-of-type(6) {
+  width: 100px;
+  background: url(img/use5.png) no-repeat 7px 3px;
+}
+.trialContent {
+  width: 1000px;
+  height: 2780px;
+  margin: auto;
+  overflow: hidden;
+}
+.trialContent .left {
+  width: 700px;
+  height: 2400px;
+  margin-top: 20px;
+  overflow: hidden;
+  float: left;
+}
+.trialContent .left h3 {
+  height: 30px;
+  border-left: 5px solid red;
+  line-height: 30px;
+  padding-left: 10px;
+  font-weight: 400;
+  color: gray;
+  margin-top: 20px;
+}
+.trialContent .left .top {
+  font-size: 18px;
+  color: red;
+  margin-top: 30px;
+  font-weight: 800;
+}
+.trialContent .left p {
+  font-size: 16px;
+  padding: 30px 0;
+  line-height: 24px;
+}
+.trialContent .left .little {
+  padding: 0 0;
+  color: #4280C2;
+  font-weight: 700;
+}
+.trialContent .left .p {
+  margin-top: 20px;
+}
+.trialContent .left .color {
+  padding: 0 0;
+  color: #0177A7;
+}
+.trialContent .left .red {
+  color: red;
+  margin-top: 20px;
+}
+.trialContent .left .path {
+  padding: 0 0;
+}
+.trialContent .left span {
+  font-weight: 800;
+}
+.trialContent .rightTry {
+  width: 270px;
+  float: right;
+  height: 2400px;
+}
+.trialContent .rightTry h3 {
+  height: 30px;
+  border-left: 5px solid red;
+  line-height: 30px;
+  padding-left: 20px;
+  font-weight: 400;
+  color: gray;
+  margin-top: 20px;
+}
+.trialContent .rightTry .money {
+  color: red;
+  font-size: 40px;
+  padding: 20px 0;
+}
+.trialContent .rightTry button {
+  width: 270px;
+  height: 48px;
+  background-color: #FE5341;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+}
+.trialContent .rightTry button:hover {
+  background-color: #F3250F;
+}
+.trialContent .rightTry .gw {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+.trialContent .rightTry img {
+  margin-top: 20px;
+}
+.trialContent .rightTry .title {
+  font-weight: 800;
+  padding: 15px 0px;
+  font-size: 16px;
+}
+.trialContent .rightTry .con {
+  font-size: 14px;
+  color: gray;
+}
+.trialContent .rightTry .tt {
+  margin-top: 60px;
+}
+.trialContent .bottomTry {
+  width: 1000px;
+  height: 360px;
+  float: left;
+}
+.trialContent .bottomTry .flowtry {
+  font-size: 20px;
+  font-weight: 800;
+  float: left;
+}
+.trialContent .bottomTry a {
+  background: url(../img/readMore.png) no-repeat 66px 5px;
+  float: right;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: red;
+}
+.trialContent .bottomTry .hotTry .item {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.trialContent .bottomTry .hotTry .item li {
+  height: 285px;
+  width: 220px;
+  border: 1px solid #c8c5c5;
+  border-radius: 5px;
+  margin-left: 36px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.trialContent .bottomTry .hotTry .item li:nth-of-type(1) {
+  margin-left: 0px;
+}
+.trialContent .bottomTry .hotTry .item li a {
+  text-decoration: none;
+  color: black;
+  padding-right: 0;
+}
+.trialContent .bottomTry .hotTry .item li a .img {
+  width: 220px;
+  height: 130px;
+  position: relative;
+}
+.trialContent .bottomTry .hotTry .item li a .img .mb {
+  width: 220px;
+  height: 130px;
+  background-color: rgba(243, 231, 231, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.trialContent .bottomTry .hotTry .item li a .img:hover .mb {
+  opacity: 1;
+}
+.trialContent .bottomTry .hotTry .item li a .img img {
+  width: 220px;
+  border-radius: 5px;
+}
+.trialContent .bottomTry .hotTry .item li a p {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.trialContent .bottomTry .hotTry .item li a p:nth-of-type(1) {
+  font-weight: 700;
+}
+.trialContent .bottomTry .hotTry .item li a p span {
+  color: red;
+}
+.trialContent .bottomTry .hotTry .item li a .green {
+  color: #80C269;
+  border: 1px solid #80C269;
+}
+.trialContent .bottomTry .hotTry .item li a > span {
+  font-size: 12px;
+  color: red;
+  border: 1px solid red;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.trialContent .bottomTry .hotTry .item li a > span:nth-of-type(2) {
+  margin-left: 7px;
+}
+.trialContent .bottomTry .hotTry .item li a .num {
+  font-size: 15px;
+  color: #FE5431;
+  margin-top: 7px;
+}
+.trialContent .bottomTry .hotTry .item li a #numm {
+  color: #80C269;
+}
+.trialContent .bottomTry .hotTry .item li a #ym {
+  background-color: #FBF4CB;
+  color: #CFA96A;
+}
+.trialContent .bottomTry .hotTry .item li a .sf {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FE5431;
+  color: white;
+  border-radius: 0px 5px 0px 7px;
+  border: none;
 }

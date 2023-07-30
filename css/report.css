@@ -77,13 +77,6 @@ body {
   position: relative;
   height: 1794px;
 }
-iframe {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 403px;
-  /* 调整高度根据需要 */
-}
 .shop h1 {
   width: 1000px;
   height: 128px;

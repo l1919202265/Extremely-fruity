@@ -16,21 +16,8 @@ window.onload = function () {
             navlist.forEach(function (item) {
                 // console.log(item.txt); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                 str += `<li>
-                        <a href="">
+                <a href="./shoppingHide.html">
                             <div class="img">
                                 <div class="mb"></div>
                                 <img src="${item.img}" alt="">

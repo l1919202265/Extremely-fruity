@@ -3,6 +3,111 @@
     padding: 0;
 }
 
+body {
+    position: relative;
+    height: 2000px;
+}
+
+header nav {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 3px gray inset;
+}
+
+header nav img {
+    width: 132px;
+    height: 52px;
+    border-radius: 10px;
+}
+
+header nav ul {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+
+    &:nth-of-type(4)>a {
+        color: #fe5341;
+    }
+
+    a {
+        text-decoration: none;
+        color: gray;
+
+    }
+}
+
+
+
+header nav ul li>a:hover {
+    color: #fe5341;
+    cursor: pointer;
+}
+
+header nav .container {
+    display: flex;
+    align-items: center;
+}
+
+header nav .container .search {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: url(./css/img/search.png) no-repeat center center;
+}
+
+header nav .container .search:hover {
+    cursor: pointer;
+}
+
+header nav .container .loginbtn {
+    width: 55px;
+    height: 35px;
+    color: #fe5341;
+    display: flex;
+    transition: .8s ease all;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: 2px solid #fe5341;
+    text-decoration: none;
+}
+
+header nav .container .loginbtn:hover {
+    color: white;
+    background-color: #fe5341;
+}
+
+body {
+    position: relative;
+    height: 1794px;
+}
+
+
+// iframe {
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     height: 403px;
+
+
+
+//     /* 调整高度根据需要 */
+// }
+
+
 // 免费试用
 .try {
 
