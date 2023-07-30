@@ -59,7 +59,7 @@ window.onload = function () {
                 // console.log(item.txt); 
 
                 str += `<li>
-                    <a href="./try.html">
+                <a href="./shoppingHide.html">
                         <div class="shawon">
                             <div class="shaw"></div>
                             <img src="${item.img}" alt="">

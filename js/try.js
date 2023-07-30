@@ -17,7 +17,10 @@ window.onload = function () {
                 // console.log(item.txt); 
 
                 str += `<li><a href="./trial.html">
+                <div class="img">
+                <div class="mb"></div>
                  <img src="${item.img}" alt="">
+                </div>
                 <p>${item.text}</p>
                 <span>${item.totalnum}</span>
                 <span>${item.num}台</span>
@@ -38,7 +41,7 @@ window.onload = function () {
 
     axios({
         method: 'get',
-        url: 'http://127.0.0.1:3000/useing/public',
+        url: 'http://127.0.0.1:3000/useing/master',
     })
         .then(function (res) {
             var navlist = res.data;
@@ -53,7 +56,10 @@ window.onload = function () {
                 // console.log(item.txt);
 
                 str += `<li><a href="./trial.html">
-                     <img src="${item.img}" alt="">
+                <div class="img">
+                <div class="mb"></div>
+                 <img src="${item.img}" alt="">
+                </div>
                     <p>${item.text}</p>
                     <span>${item.totalnum}</span>
                     <span>${item.num}台</span>
@@ -70,7 +76,7 @@ window.onload = function () {
         });
     axios({
         method: 'get',
-        url: 'http://127.0.0.1:3000/useing/public',
+        url: 'http://127.0.0.1:3000/useing/master',
     })
         .then(function (res) {
             var navlist = res.data;
@@ -85,7 +91,10 @@ window.onload = function () {
                 // console.log(item.txt);
 
                 str += `<li><a href="./trial.html">
-                         <img src="${item.img}" alt="">
+                <div class="img">
+                <div class="mb"></div>
+                 <img src="${item.img}" alt="">
+                </div>
                         <p>${item.text}</p>
                         <span>${item.totalnum}</span>
                         <span>${item.num}台</span>
@@ -123,7 +132,10 @@ window.onload = function () {
                 // console.log(item.txt); 
 
                 str += `<li><a href="./trial.html">
-                         <img src="${item.img}" alt="">
+                <div class="img">
+                <div class="mb"></div>
+                 <img src="${item.img}" alt="">
+                </div>
                         <p>${item.text}</p>
                         <span>${item.totalnum}</span>
                         <span>${item.num}台</span>
@@ -159,7 +171,10 @@ window.onload = function () {
                 console.log(item.txt); // 输出导航项的文本信息
 
                 str += `<li><a href="./trial.html">
-                     <img src="${item.img}" alt="">
+                <div class="img">
+                <div class="mb"></div>
+                 <img src="${item.img}" alt="">
+                </div>
                     <p>${item.text}</p>
                     <span>${item.totalnum}</span>
                     <span>${item.num}台</span>
