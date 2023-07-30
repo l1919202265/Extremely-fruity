@@ -84,6 +84,7 @@ header nav .container .loginbtn:hover {
   position: absolute;
   right: 252px;
   top: 40px;
+  animation: carten 1s;
 }
 .img .content h2 {
   font-size: 34px;
@@ -122,6 +123,14 @@ header nav .container .loginbtn:hover {
   font-size: 24px;
   line-height: 24px;
   margin-left: 100px;
+}
+@keyframes carten {
+  0% {
+    transform: translate(600px, -600px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 .flow {
   width: 100%;

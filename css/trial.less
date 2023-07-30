@@ -106,6 +106,7 @@ header nav .container .loginbtn:hover {
         position: absolute;
         right: 252px;
         top: 40px;
+        animation: carten 1s;
 
 
         h2 {
@@ -157,6 +158,18 @@ header nav .container .loginbtn:hover {
         }
     }
 }
+
+// 动画
+@keyframes carten {
+    0% {
+        transform: translate(600px, -600px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
 
 // 试用流程
 .flow {
