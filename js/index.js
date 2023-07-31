@@ -129,7 +129,7 @@ topBtn.onclick=function(){
 })()
 // 发现酷玩
 var lod=document.querySelector(".lod")
-var groud=0
+var groud=0 //
 var loding=document.querySelector('.loding')
 lod.addEventListener('click',function(){
     lod.style.display='none';
@@ -140,7 +140,7 @@ lod.addEventListener('click',function(){
         showImg()
     }, 1000);
 }) 
-showImg()
+showImg()//页面渲染
 function showImg(){
     axios.get('http://127.0.0.1:3000/play/new').then(res=>{
         show(res.data)
