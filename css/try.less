@@ -194,14 +194,16 @@ body {
 
 .public {
 
-    width: 1080px;
+    // width: 1080px;
     margin: auto;
-    // background-color: antiquewhite;
+    background-color: #F7F7F7;
 }
 
 .trial {
-    width: 100%;
+    // width: 100%;
+    width: 1080px;
     height: 1400px;
+    margin: auto;
     // background-color: #e01f1f;
 
     .item {
@@ -378,8 +380,11 @@ body {
 }
 
 .red {
+    color: red !important;
     border-bottom: 4px solid #FE5431;
+
 }
+
 
 body {
     position: relative;
@@ -404,156 +409,161 @@ iframe:nth-of-type(2) {
 
 
 // 体验师专享
-.pantent {
-    height: 1760px;
-    width: 1080px;
-    margin: auto;
+.exclusive {
+    width: 100%;
+    background-color: #F7F7F7;
+
+    .pantent {
+        height: 1760px;
+        width: 1080px;
+        margin: auto;
 
 
 
 
 
-    .only {
-        width: 100%;
-        height: 1400px;
-        // background-color: #e01f1f;
-
-        .item {
+        .only {
             width: 100%;
-            margin: auto;
-            display: flex;
-            list-style: none;
-            flex-direction: row;
-            flex-wrap: wrap;
-            // justify-content: space-between;
-            text-align: center;
+            height: 1400px;
+            // background-color: #e01f1f;
+
+            .item {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                // justify-content: space-between;
+                text-align: center;
 
 
 
-            li {
-                height: 285px;
-                width: 220px;
-                // background-color: #FE5431;
-                border: 1px solid rgb(200, 197, 197);
-                border-radius: 5px;
+                li {
+                    height: 285px;
+                    width: 220px;
+                    // background-color: #FE5431;
+                    border: 1px solid rgb(200, 197, 197);
+                    border-radius: 5px;
 
 
-                position: relative;
-                margin-left: 40px;
-                margin-top: 20px;
-                margin-bottom: 20px;
+                    position: relative;
+                    margin-left: 40px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
 
-                a {
-                    text-decoration: none;
-                    color: black;
+                    a {
+                        text-decoration: none;
+                        color: black;
 
 
-                    .img {
-                        width: 220px;
-                        height: 130px;
-                        position: relative;
-
-                        .mb {
+                        .img {
                             width: 220px;
                             height: 130px;
-                            background-color: rgba(243, 231, 231, 0.3);
+                            position: relative;
+
+                            .mb {
+                                width: 220px;
+                                height: 130px;
+                                background-color: rgba(243, 231, 231, 0.3);
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;
+                                // transition: opacity 0.3s ease;
+
+                            }
+
+                            &:hover .mb {
+                                opacity: 1;
+                                animation: cartentt 1s infinite;
+                            }
+
+                            @keyframes cartentt {
+                                0% {
+                                    opacity: 0;
+                                }
+
+                                50% {
+                                    opacity: 1;
+                                }
+
+                                100% {
+                                    opacity: 0;
+                                }
+                            }
+
+                            img {
+                                width: 220px;
+                                border-radius: 5px;
+                            }
+                        }
+
+                        p {
+                            font-size: 16px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            text-align: center;
+                            margin-top: 3px;
+                            margin-bottom: 3px;
+
+                            &:nth-of-type(1) {
+                                font-weight: 700;
+                            }
+
+                            span {
+                                color: red;
+
+                            }
+                        }
+
+                        &>span {
+                            font-size: 12px;
+                            color: #ccc;
+                            border: 1px solid #ccc;
+                            padding: 2px 6px;
+                            border-radius: 3px;
+                            display: inline-block;
+                            margin-bottom: 10px;
+
+                            &:nth-of-type(2) {
+                                margin-left: 7px;
+                            }
+                        }
+
+
+
+                        .num {
+                            font-size: 14px;
+                            color: #ccc;
+                            margin-top: 7px;
+                        }
+
+                        .sf {
                             position: absolute;
                             top: 0;
-                            left: 0;
-                            opacity: 0;
-                            // transition: opacity 0.3s ease;
-
+                            right: 0;
+                            background-color: #FBF4CB;
+                            color: #C4A96A;
+                            border-radius: 0px 5px 0px 7px;
+                            border: none;
                         }
-
-                        &:hover .mb {
-                            opacity: 1;
-                            animation: cartentt 1s infinite;
-                        }
-
-                        @keyframes cartentt {
-                            0% {
-                                opacity: 0;
-                            }
-
-                            50% {
-                                opacity: 1;
-                            }
-
-                            100% {
-                                opacity: 0;
-                            }
-                        }
-
-                        img {
-                            width: 220px;
-                            border-radius: 5px;
-                        }
-                    }
-
-                    p {
-                        font-size: 16px;
-                        margin-left: 10px;
-                        margin-right: 10px;
-                        text-align: center;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-
-                        &:nth-of-type(1) {
-                            font-weight: 700;
-                        }
-
-                        span {
-                            color: red;
-
-                        }
-                    }
-
-                    &>span {
-                        font-size: 12px;
-                        color: #ccc;
-                        border: 1px solid #ccc;
-                        padding: 2px 6px;
-                        border-radius: 3px;
-                        display: inline-block;
-                        margin-bottom: 10px;
-
-                        &:nth-of-type(2) {
-                            margin-left: 7px;
-                        }
-                    }
-
-
-
-                    .num {
-                        font-size: 14px;
-                        color: #ccc;
-                        margin-top: 7px;
-                    }
-
-                    .sf {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #FE5431;
-                        color: white;
-                        border-radius: 0px 5px 0px 7px;
-                        border: none;
                     }
                 }
             }
-        }
 
-        .more {
-            text-align: center;
-            margin-top: 30px;
-
+            .more {
+                text-align: center;
+                margin-top: 30px;
 
 
-            a {
-                text-decoration: none;
-                color: rgb(12, 12, 12);
+
+                a {
+                    text-decoration: none;
+                    color: rgb(12, 12, 12);
 
 
+                }
             }
         }
     }
