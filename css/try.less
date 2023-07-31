@@ -252,6 +252,21 @@ body {
 
                     &:hover .mb {
                         opacity: 1;
+                        animation: cartentt 1s infinite;
+                    }
+
+                    @keyframes cartentt {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
                     }
 
                     img {
@@ -446,12 +461,27 @@ iframe:nth-of-type(2) {
                             top: 0;
                             left: 0;
                             opacity: 0;
-                            transition: opacity 0.3s ease;
+                            // transition: opacity 0.3s ease;
 
                         }
 
                         &:hover .mb {
                             opacity: 1;
+                            animation: cartentt 1s infinite;
+                        }
+
+                        @keyframes cartentt {
+                            0% {
+                                opacity: 0;
+                            }
+
+                            50% {
+                                opacity: 1;
+                            }
+
+                            100% {
+                                opacity: 0;
+                            }
                         }
 
                         img {

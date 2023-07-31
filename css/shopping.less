@@ -189,29 +189,63 @@ iframe {
                 .shawon {
                     position: relative;
                     width: 220px;
+                    // animation: cartens 1s;
 
-                    img {
-                        width: 220px;
-                        border-radius: 8px 8px 0 0;
-                    }
+                    // 动画
+                    // @keyframes cartens {
+                    //     0% {
+                    //         opacity: 1;
+                    //     }
+
+                    //     50% {
+                    //         opacity: 0;
+                    //     }
+
+                    //     100% {
+                    //         opacity: 1;
+                    //     }
+                }
 
 
 
-                    .shaw {
-                        width: 220px;
-                        height: 130px;
-                        position: absolute;
-                        left: 0px;
-                        top: 0px;
-                        background-color: rgba(238, 236, 236, 0.4);
-                        border-radius: 7px 7px 0 0;
+
+                img {
+                    width: 220px;
+                    border-radius: 8px 8px 0 0;
+                }
+
+
+
+                .shaw {
+                    width: 220px;
+                    height: 130px;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    background-color: rgba(238, 236, 236, 0.4);
+                    border-radius: 7px 7px 0 0;
+                    opacity: 0;
+                    // transition: opacity 0.3s ease;
+
+                }
+
+                &:hover .shaw {
+                    opacity: 1;
+                    animation: cartens 1s infinite;
+
+                }
+
+                @keyframes cartens {
+                    0% {
                         opacity: 0;
-                        transition: opacity 0.3s ease;
-
                     }
 
-                    &:hover .shaw {
+                    50% {
                         opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
                     }
                 }
 

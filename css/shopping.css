@@ -145,11 +145,11 @@ iframe {
   position: relative;
   width: 220px;
 }
-.newest .newitem li a .shawon img {
+.newest .newitem li a img {
   width: 220px;
   border-radius: 8px 8px 0 0;
 }
-.newest .newitem li a .shawon .shaw {
+.newest .newitem li a .shaw {
   width: 220px;
   height: 130px;
   position: absolute;
@@ -158,10 +158,21 @@ iframe {
   background-color: rgba(238, 236, 236, 0.4);
   border-radius: 7px 7px 0 0;
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
-.newest .newitem li a .shawon:hover .shaw {
+.newest .newitem li a:hover .shaw {
   opacity: 1;
+  animation: cartens 1s infinite;
+}
+@keyframes cartens {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .newest .newitem li a .box {
   border-left: 1px solid #FFFFFF;
