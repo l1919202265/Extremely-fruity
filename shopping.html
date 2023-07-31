@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>导购</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导购</title>
+    <link rel="stylesheet" href="./css/shopping.css">
+    <iframe src="./footer.html" width="100%"></iframe>
+</head>
 
-    <body>
+<body>
+    <header>
+        <nav>
+            <img src="./img/header-logo@2x.png" alt="">
+            <ul>
+                <li><a href="./index.html">首页</a> </li>
+                <li> <a href="./play.html">酷玩</a></li>
+                <li> <a href="./shopping.html">导购</a></li>
+                <li> <a href="./try.html">试用</a></li>
+                <li> <a href="./report.html">报告</a></li>
+            </ul>
+            <div class="container">
+                <a class="search" href></a>
+                <a class="loginbtn" href="#">登录</a>
+            </div>
+        </nav>
+    </header>
+    <div class="shop">
 
-    </body>
+        <h1>导购清单</h1>
+        <div class="nav">
+            <ul class="top">
+                <li class="a newww red">最新</li>
+                <li class="a">最热</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 最新 -->
+    <div class="newest  latest">
+        <ul class="newitem newitema">
+
+            <!-- <li>
+                <a href="">
+                    <div class="shawon">
+                        <div class="shaw"></div>
+                        <img src="./img/g2.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
+                        <span>3</span>
+                        <span>3</span>
+                    </div>
+                </a>
+            </li> -->
+        </ul>
+
+        <div class="more" onclick=" changeMore()">
+            <!-- <a href="">
+
+                向下拉加载更多</a> -->
+            <p> 向下拉加载更多</p>
+
+        </div>
+        <div class="beforeMore">
+            <a href="">
+                正在加载中
+            </a>
+        </div>
+    </div>
+    <!-- 最热 -->
+    <div class="newest  hot">
+        <ul class="newitem newitemb">
+            <!-- <li>
+                <a href="./try.html">
+                    <div class="shawon">
+                        <div class="shaw"></div>
+                        <img src="./img/g2.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
+                        <span>3</span>
+                        <span>3</span>
+                    </div>
+                </a>
+            </li> -->
+        </ul>
+        <div class="more  morea" onclick=" changeMorea()">
+            <!-- <a href="">
+
+                向下拉加载更多</a> -->
+            <p> 向下拉加载更多</p>
+
+        </div>
+        <div class=" beforeMore  beforeMorea ">
+            <a href="">
+                正在加载中
+            </a>
+        </div>
+    </div>
+
+
+</body>
 
 </html>
+<script src="./js/shopping.js"></script>
+<script src="./js/axios.min.js"></script>
