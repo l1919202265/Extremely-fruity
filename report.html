@@ -1,103 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>报告</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/report.css">
-    <iframe src="./footer.html" width="100%"></iframe>
     <style>
-        .content>.leftSpan>span:nth-of-type(3) {
-            color: rgb(121, 119, 119);
-            margin-left: 6px;
-            font-size: 13px;
+        .iframe1{
+            width: 100%;
+        }
+        .iframe2{
+            width: 100%;
+            height: 405px;
+        }
+        .on{
+            border-bottom: 4px #fe5431 solid;
+            padding-bottom: 8px;
+            color: #fe5431;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <img src="./img/header-logo@2x.png" alt="">
-            <ul>
-                <li><a href="./index.html">首页</a> </li>
-                <li> <a href="./play.html">酷玩</a></li>
-                <li> <a href="./shopping.html">导购</a></li>
-                <li> <a href="./try.html">试用</a></li>
-                <li> <a href="./report.html">报告</a></li>
-            </ul>
-            <div class="container">
-                <a class="search" href></a>
-                <a class="loginbtn" href="#">登录</a>
+    <iframe class="iframe1" src="./header.html" frameborder="0"></iframe>
+    <main>
+        <section class="sec-nav">
+            <h1>体验报告</h1>
+            <nav>
+                <a href="#" id="new" class="on">最新</a>
+                <a href="#" id="hot" >最热</a>
+            </nav>
+        </section>
+        <section class="sec-main">
+            <div class="center">
+                <article class="new" >
+                    <ul class="my-new" id="ul-new">
+                    </ul>
+                    <p class="lod" id="new-lod">点击加载更多</p>
+                    <p class="loding" style="display: none;" id="new-loding">正在加载中</p>
+                </article>
+                <article class="hot" style="display: none;">
+                    <ul class="my-new" id="ul-hot">
+                    
+                    </ul>
+                    <p class="lod" id="hot-lod">点击加载更多</p>
+                    <p class="loding" style="display: none;" id="hot-loding">正在加载中</p>
+                </article>
+                <aside>
+                    <div class="shang">
+                        <h2>极果体验师</h2>
+                        <img src="./img/tiyanImg.jpg" alt="">
+                        <h5>福利</h5>
+                        <p>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</p>
+                        <h5>要求</h5>
+                        <p>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</p>
+                        <h5>申请</h5>
+                        <p>
+                            1. 关注极果公众号：jguojguo <br>
+                            （或扫描下方二维码）<br>
+                            2. 在公众号内回复：体验师
+                        </p>
+                    </div>
+                    <div class="xia">
+                        <h2>关注我们</h2>
+                        <img src="./img/myCode.jpg" alt="">
+                    </div>
+                </aside>
             </div>
-        </nav>
-    </header>
-    <div class="shop">
-
-        <h1>体验报告</h1>
-        <div class="nav">
-            <ul class="top">
-                <li class="a newww red">最新</li>
-                <li class="a">最热</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!-- 最新 -->
-    <div class="report">
-        <div class="reportNew">
-            <!-- 最新左 -->
-            <div class="left">
-                <ul class="bull">
-                    <li><a href="">
-                            <div class="img">
-                                <div class="mb"></div>
-                                <img src="./img/bg1.jpg" alt="">
-                                <div class="content">
-                                    <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
-                                    <div class="leftSpan">
-                                        <span></span>
-                                        <!-- <p>苏苏</p> -->
-                                        <span>苏苏</span>
-                                        <span>2016-01-25</span>
-                                    </div>
-                                    <div class="rightSpan">
-                                        <span>3</span>
-                                        <span>3</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lecture">
-                                <p>关于格林威特空气净化器还有 4 篇报告，点击查看</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-
-
-
-            </div>
-            <div class="right">
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-    </div>
-
+        </section>
+    </main>
+    <iframe class="iframe2" src="./footer.html" frameborder="0"></iframe>
 </body>
-
 </html>
 <script src="./js/axios.min.js"></script>
 <script src="./js/report.js"></script>
+<script>
+
+</script>
