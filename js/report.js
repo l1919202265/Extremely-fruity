@@ -16,6 +16,8 @@ xin.addEventListener('click',function(){
     hot.classList.remove('on')
     xin1.style.display='block'
     hot1.style.display='none'
+    newLoding.style.display='none';
+    newLod.style.display='block';
     groud=0  
     ula.innerHTML=''
     showNew()
@@ -26,6 +28,8 @@ hot.addEventListener('click',function(){
     xin.classList.remove('on')
     hot1.style.display='block'
     xin1.style.display='none'
+    hotLoding.style.display='none';
+    hotLod.style.display='block';
     groud=0  
     ul.innerHTML=''
     showhot()
@@ -48,11 +52,8 @@ function showNew(){
     })
     
     function show(data){
-        
         var str='';
         for(var i=0;i<4;i++){
-            
-            // console.log(groud);
             str+=`
             <li>
                     <a href="#">
@@ -103,7 +104,6 @@ function showhot(){
     
     function show1(data){
         var str='';
-        
             for(var i=0;i<4;i++){
                 if(groud<=data.length-1){
                 console.log(groud);

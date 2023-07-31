@@ -145,7 +145,6 @@ function showImg(){
     axios.get('http://127.0.0.1:3000/play/new').then(res=>{
         show(res.data)
     })
-    
     function show(data){
         var ul=document.querySelector('.find-main')
         var number=0;
