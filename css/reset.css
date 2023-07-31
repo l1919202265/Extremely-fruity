@@ -56,6 +56,9 @@ h6 {
     font-size: 100%;
     font-weight: normal;
 }
+h1,h2,h3,h4,h5,h6,p,a,span,i,img,dt,dd,input,button,textarea{
+    cursor: pointer;
+}
 
 i,
 em {
@@ -122,5 +125,4 @@ img:hover {
     opacity: .8;
     transform: scale(1.05);
     box-shadow: 0px 0px 5px 5px gray;
-    cursor: pointer;
 }

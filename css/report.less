@@ -1,0 +1,159 @@
+main{
+    margin-top: -80px;
+    .sec-nav{
+        width: 1000px;
+        margin: auto;
+        // background-color: orange;
+        // height: 1000px;
+        h1{
+            font-size: 40px;
+            text-align: center;
+            padding: 34px 0 30px;
+        }
+        nav{
+            text-align: center;
+            line-height: 1.7;
+            a{
+                padding-bottom: 12px;
+                width: 165px;
+                font-size: 18px;
+                display: inline-block;
+            }
+        }
+    }
+    .sec-main{
+        background-color: #F7F7F7;
+        padding-bottom: 30px;
+
+        overflow: hidden;
+        .center{
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            margin-top: 30px;
+            aside{
+                flex: 1;
+                // background-color: red;
+                margin-left: 30px;
+                h2{
+                    color: #474747;
+                    font-size: 18px;
+                    height: 25px;
+                    line-height: 25px;
+                    padding-left: 30px;
+                    margin-bottom: 20px;
+                    border-left: 6px solid #fe5341;
+                }
+                img{
+                    margin-bottom: 20px;
+                }
+                h5{
+                    line-height: 1.6;
+                    color: #474747;
+                    font-size: 16px;
+                    padding: 5px 0;
+                    font-weight: bold;
+                }
+                p{
+                    margin-bottom: 10px;
+                    color: #a3a3a3;
+                    font-size: 14px;
+                }
+                .shang{
+                    margin-bottom: 80px;
+                }
+            }
+            article{
+                flex: 2.5;
+                .lod{
+                    color: red;
+                    text-align: center;
+                    padding-left: 30px;
+                    cursor: pointer;
+                    background: url(../css/img/more.png) no-repeat 445px 9px;
+                    
+                }
+                .loding{
+                    color: red;
+                    text-align: center;
+                    padding-left: 30px;
+                    cursor: pointer;
+                    background: url(../css/img/loading-icon.gif) no-repeat 445px;
+                }
+                // background-color: blue;
+                & a:hover {
+                    color: initial;
+                }
+                a{
+                    position: relative;
+                    img{
+                        width: 700px;
+                    border-radius: 5px;
+
+                    }
+                    .info{
+                        background-color: #efecebc1;
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        left: 0;
+                        padding: 15px;
+                        box-sizing: border-box;
+                        p{
+                            color: #474747;
+                            font-size: 18px;
+                            padding: 9px 0 12px;
+                        }
+                        .info-in{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .left{
+                                display: flex;
+                                img{
+                                    width: 20px;
+                                    border-radius: 50%;
+                                    margin-right: 10px;
+
+                                }
+                                .red{
+                                    color:#fe695a;
+                                    font-size: 13px;
+                                    margin-right: 10px;
+                                }
+                                .time{
+                                    font-size: 13px;
+                                }
+                            
+                            }
+                            .right{
+                                span{
+                                    padding-left: 20px;
+                                    font-size: 13px;
+                                }
+                                
+                                .zan{
+                                    background: url(../css/img/zan.png) no-repeat 5px 2px;
+                                }
+                                .xinxi{
+                                    background: url(../css/img/reply.png) no-repeat 5px 2px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .look-about{
+                    text-align: center;
+                    border: 1px solid#a3a3a3;
+                    border-radius: 5px;
+                    height: 48px;
+                    line-height: 48px;
+                    color: #a3a3a3;
+                    font-size: 14px;
+                    margin: 15px 0 15px;
+                }
+            }
+        }
+    }
+} 
