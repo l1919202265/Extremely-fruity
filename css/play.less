@@ -15,7 +15,6 @@ body {
             margin: 30px auto;
             text-align: center;
             font-size: 40px;
-            background-color: antiquewhite;
         }
 
         &>ul {
@@ -24,12 +23,10 @@ body {
             align-items: center;
             justify-content: space-evenly;
             padding: 0 100px;
-            background-color: skyblue;
 
             &>li {
                 width: 165px;
                 height: 40px;
-                // background-color: red;
 
                 a {
                     width: 100%;
@@ -46,10 +43,15 @@ body {
             }
         }
 
-        .playNew {
+        .playPublic {
             margin-top: 20px;
 
-            .playNewList {
+            p {
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            .playPublicList {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
@@ -59,10 +61,8 @@ body {
                     width: 220px;
                     height: 230px;
                     margin: 10px 15px;
-                    // display: inline-block;
                     border-radius: 10px;
                     overflow: hidden;
-                    // background-color: palegoldenrod;
 
                     img {
                         width: 220px;
@@ -94,9 +94,56 @@ body {
                         color: red;
                         font-size: 15px;
                     }
+
+                    &>.price>div:nth-of-type(2)>span {
+                        width: 30px;
+                        height: 20px;
+                        color: gray;
+                        font-size: 13px;
+                        line-height: 20px;
+                        display: inline-block;
+                    }
+
+                    &>.price>div:nth-of-type(2)>span:nth-of-type(1) {
+                        background: url(../css/img/xin.png) no-repeat 13px center;
+                    }
+
+                    &>.price>div:nth-of-type(2)>span:nth-of-type(2) {
+                        background: url(../css/img/reply.png) no-repeat 13px center;
+                    }
                 }
             }
+
+            .clickMore {
+                width: 15%;
+                color: #fe5341;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background: url(../css/img/more.png) no-repeat 20px center;
+            }
+
+            .loadingMore {
+                width: 15%;
+                color: #fe5341;
+                margin: 0 auto;
+                display: flex;
+                display: none;
+                align-items: center;
+                justify-content: space-around;
+                background: url(../css/img/loading-icon.gif) no-repeat 20px center;
+            }
         }
+
+        .playHot {
+            // display: none;
+        }
+
+        .playClass {
+            // display: none;
+        }
+
 
     }
 

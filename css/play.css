@@ -14,7 +14,6 @@ body .play > p {
   margin: 30px auto;
   text-align: center;
   font-size: 40px;
-  background-color: antiquewhite;
 }
 body .play > ul {
   font-size: 20px;
@@ -22,7 +21,6 @@ body .play > ul {
   align-items: center;
   justify-content: space-evenly;
   padding: 0 100px;
-  background-color: skyblue;
 }
 body .play > ul > li {
   width: 165px;
@@ -39,30 +37,34 @@ body .play > ul > li a {
 body .play > ul > li a:hover {
   color: #fe5341;
 }
-body .play .playNew {
+body .play .playPublic {
   margin-top: 20px;
 }
-body .play .playNew .playNewList {
+body .play .playPublic p {
+  margin: 20px auto;
+  text-align: center;
+}
+body .play .playPublic .playPublicList {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
-body .play .playNew .playNewList li {
+body .play .playPublic .playPublicList li {
   width: 220px;
   height: 230px;
   margin: 10px 15px;
   border-radius: 10px;
   overflow: hidden;
 }
-body .play .playNew .playNewList li img {
+body .play .playPublic .playPublicList li img {
   width: 220px;
   height: 130px;
 }
-body .play .playNew .playNewList li p {
+body .play .playPublic .playPublicList li p {
   padding: 5px 10px;
 }
-body .play .playNew .playNewList li > span {
+body .play .playPublic .playPublicList li > span {
   display: flex;
   padding: 0 10px;
   box-sizing: border-box;
@@ -71,15 +73,48 @@ body .play .playNew .playNewList li > span {
   color: gray;
   font-size: 12px;
 }
-body .play .playNew .playNewList li > .price {
+body .play .playPublic .playPublicList li > .price {
   display: flex;
   padding: 10px 10px;
   align-items: center;
   justify-content: space-between;
 }
-body .play .playNew .playNewList li > .price > div:nth-of-type(1) > span {
+body .play .playPublic .playPublicList li > .price > div:nth-of-type(1) > span {
   color: red;
   font-size: 15px;
+}
+body .play .playPublic .playPublicList li > .price > div:nth-of-type(2) > span {
+  width: 30px;
+  height: 20px;
+  color: gray;
+  font-size: 13px;
+  line-height: 20px;
+  display: inline-block;
+}
+body .play .playPublic .playPublicList li > .price > div:nth-of-type(2) > span:nth-of-type(1) {
+  background: url(../css/img/xin.png) no-repeat 13px center;
+}
+body .play .playPublic .playPublicList li > .price > div:nth-of-type(2) > span:nth-of-type(2) {
+  background: url(../css/img/reply.png) no-repeat 13px center;
+}
+body .play .playPublic .clickMore {
+  width: 15%;
+  color: #fe5341;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url(../css/img/more.png) no-repeat 20px center;
+}
+body .play .playPublic .loadingMore {
+  width: 15%;
+  color: #fe5341;
+  margin: 0 auto;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  background: url(../css/img/loading-icon.gif) no-repeat 20px center;
 }
 body iframe:nth-of-type(2) {
   width: 100%;

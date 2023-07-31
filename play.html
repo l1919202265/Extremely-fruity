@@ -15,19 +15,41 @@
             <p>发现酷玩</p>
             <ul>
                 <li>
-                    <a href="#">最新</a>
+                    <a class="playTitle" href="#">最新</a>
                 </li>
                 <li>
-                    <a href="#">最热</a>
+                    <a class="playTitle" href="#">最热</a>
                 </li>
                 <li>
-                    <a href="#">品类</a>
+                    <a class="playTitle" href="#">品类</a>
                 </li>
             </ul>
-            <div class="playNew">
-                <ul class="playNewList">
+            <!-- 酷玩最新 -->
+            <div class="playNew playPublic">
+                <p>酷玩最新</p>
+                <ul class="playNewList playPublicList">
 
                 </ul>
+                <a class="clickMore" href="javascript:void(0);">点击加载更多</a>
+                <a class="loadingMore" href="javascript:void(0);">正在加载中</a>
+            </div>
+            <!-- 酷玩最热 -->
+            <div class="playHot playPublic">
+                <p>酷玩最热</p>
+                <ul class="playHotList playPublicList">
+
+                </ul>
+                <a class="clickMore" href="javascript:void(0);">点击加载更多</a>
+                <a class="loadingMore" href="javascript:void(0);">正在加载中</a>
+            </div>
+            <!-- 酷玩品类 -->
+            <div class="playClass playPublic">
+                <p>酷玩品类</p>
+                <ul class="playClassList playPublicList">
+
+                </ul>
+                <a class="clickMore" href="javascript:void(0);">点击加载更多</a>
+                <a class="loadingMore" href="javascript:void(0);">正在加载中</a>
             </div>
         </div>
         <iframe src="./footer.html" frameborder="0" scrolling="no"></iframe>
@@ -36,26 +58,50 @@
 </html>
 <script src="./js/axios.min.js"></script>
 <script>
-    axios.get('http://127.0.0.1:3000/play/new', {
-
-    }).then(res => {
-        data = res.data
-        showData(data);
-    })
-
-    showData = data => {
-        var str = '';
+    //切换
+    window.addEventListener('load', function () {
         var playNewList = document.getElementsByClassName('playNewList')[0];
-        console.log(data);
-        console.log(playNewList);
-        for (var i = 0; i < data.length; i++) {
-            for (var j = 0; j < data[i].length; j++) {
-                if (data[i][j].description == undefined) {
-                    data[i][j].description = '全新智能眼镜';
+        var playHotList = document.getElementsByClassName('playHotList')[0];
+        var playClassList = document.getElementsByClassName('playClassList')[0];
+        var playTitle = document.getElementsByClassName('playTitle');
+        var playPublic = document.getElementsByClassName('playPublic');
+        var clickMore = document.getElementsByClassName('clickMore');
+        var loadingMore = document.getElementsByClassName('loadingMore');
+        for (var i = 0; i < playTitle.length; i++) {
+            playTitle[i].setAttribute('index', i);
+            playPublic[i].style.display = 'none';
+            playPublic[0].style.display = 'block';
+            playTitle[i].addEventListener('click', function () {
+                var index = this.getAttribute('index');
+                for (var j = 0; j < playTitle.length; j++) {
+                    playPublic[j].style.display = 'none';
+                    playPublic[index].style.display = 'block';
                 }
-                dataItem = data[i][j];
-                console.log(dataItem);
-                str += `
+
+                clickMore[index].addEventListener('click', function () {
+                    clickMore[index].style.display = 'none';
+                    loadingMore[index].style.display = 'block';
+                })
+            })
+        }
+
+        //酷玩最新
+        axios.get('http://127.0.0.1:3000/play/new', {
+
+        }).then(res => {
+            var data = res.data
+            showDataOne(data);
+        })
+        showDataOne = data => {
+            var str = '';
+
+            for (var i = 0; i < data.length; i++) {
+                for (var j = 0; j < data[i].length; j++) {
+                    if (data[i][j].description == undefined) {
+                        data[i][j].description = '全新智能眼镜';
+                    }
+                    dataItem = data[i][j];
+                    str += `
                         <li>
                             <img src="${dataItem.img}" />
                             <p>${dataItem.description}</p>
@@ -72,9 +118,83 @@
                             </div>
                         </li>
                         `
-                // console.log(str);
-                playNewList.innerHTML = str;
+                    playNewList.innerHTML = str;
+                }
             }
         }
-    }
+
+        //酷玩最热
+        axios.get('http://127.0.0.1:3000/play/hot', {
+        }).then(res => {
+            var data = res.data
+            showDataTwo(data);
+        })
+        showDataTwo = data => {
+            var str = '';
+
+            for (var i = 0; i < data.length; i++) {
+                for (var j = 0; j < data[i].length; j++) {
+                    if (data[i][j].description == undefined) {
+                        data[i][j].description = '全新智能眼镜';
+                    }
+                    dataItem = data[i][j];
+                    str += `
+                        <li>
+                            <img src="${dataItem.img}" />
+                            <p>${dataItem.description}</p>
+                            <span>${dataItem.text}</span>
+                            <div class="price">
+                                <div>
+                                    <span>${dataItem.price}</span>
+                                </div>
+                                <div>
+                                    <span>${dataItem.like}</span>
+                                    <span>${dataItem.words}</span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        `
+                    playHotList.innerHTML = str;
+                }
+            }
+        }
+        //酷玩品类
+        axios.get('http://127.0.0.1:3000/play/new', {
+
+        }).then(res => {
+            var data = res.data;
+            showThree(data);
+        })
+        showThree = data => {
+            var str = '';
+
+            for (var i = 0; i < data.length; i++) {
+                for (var j = 0; j < data[i].length; j++) {
+                    if (data[i][j].description == undefined) {
+                        data[i][j].description = '全新智能眼镜';
+                    }
+                    dataItem = data[i][j];
+                    str += `
+                        <li>
+                            <img src="${dataItem.img}" />
+                            <p>${dataItem.description}</p>
+                            <span>${dataItem.text}</span>
+                            <div class="price">
+                                <div>
+                                    <span>${dataItem.price}</span>
+                                </div>
+                                <div>
+                                    <span>${dataItem.like}</span>
+                                    <span>${dataItem.words}</span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        `
+                    playClassList.innerHTML = str;
+                }
+            }
+        }
+    })
 </script>
