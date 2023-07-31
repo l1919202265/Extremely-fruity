@@ -15,27 +15,27 @@
             <p>注册极果</p>
             <ul>
                 <li>
-                    <input type="text" placeholder="请输入登录手机号">
+                    <input class="phone" type="text" placeholder="请输入登录手机号" maxlength="11">
                 </li>
                 <li>
-                    <input type="text" placeholder="请输入图片校验码">
+                    <input class="imgcode" type="text" placeholder="请输入图片校验码" maxlength="4">
                     <img class="imgCode" src="./img/imgCode.jpg">
                 </li>
                 <li>
-                    <input type="phone" placeholder="请输入4位数字验证码">
+                    <input class="numcode" type="phone" placeholder="请输入4位数字验证码" maxlength="4">
                     <div class="securityCode">获取验证码</div>
                 </li>
                 <li>
-                    <input type="text" placeholder="请输入用户名">
+                    <input class="username" type="text" placeholder="请输入用户名" minlength="2" maxlength="12">
                 </li>
                 <li>
-                    <input type="text" placeholder="请输入新密码">
+                    <input class="pwd" type="text" placeholder="请输入新密码" minlength="6" maxlength="12">
                 </li>
                 <li>
-                    <input type="text" placeholder="确定新密码">
+                    <input class="pwd" type="text" placeholder="确定新密码" minlength="6" maxlength="12">
                 </li>
                 <li>
-                    <a href="./login.html">登录</a>
+                    <a class="loginbtn" href="javascript:void(0)">登录</a>
                 </li>
             </ul>
         </div>
@@ -43,3 +43,76 @@
     </body>
 
 </html>
+<script>
+    var phone = document.getElementsByClassName('phone')[0];
+    var imgcode = document.getElementsByClassName('imgcode')[0];
+    var numcode = document.getElementsByClassName('numcode')[0];
+    var username = document.getElementsByClassName('username')[0];
+    var pwd = document.getElementsByClassName('pwd');
+    var securityCode = document.getElementsByClassName('securityCode')[0];
+    var loginbtn = document.getElementsByClassName('loginbtn')[0];
+    phone.addEventListener('input', () => {
+        phoneVal = phone.value;
+        var reg = /^\d{11,11}$/;
+        regphone = reg.test(phoneVal);
+    })
+
+    imgcode.addEventListener('input', () => {
+        imgcodeVal = imgcode.value;
+        var reg = /^\w{4}$/;
+        regimgcode = reg.test(imgcodeVal);
+    })
+    numcode.addEventListener('input', () => {
+        numcodeVal = numcode.value;
+        var reg = /^\w{4}$/;
+        regnumcode = reg.test(numcodeVal)
+    })
+
+    username.addEventListener('input', () => {
+        usernameVal = username.value;
+        var reg = /^\w{6,12}$/;
+        regusername = reg.test(usernameVal);
+    });
+
+    pwd[0].addEventListener('input', () => {
+        pwdVal = pwd[0].value;
+        var reg = /^\w{6,12}$/;
+        regpwd = reg.test(pwdVal);
+    });
+
+    pwd[1].addEventListener('input', () => {
+        pwdValOne = pwd[1].value;
+        var reg = /^\w{6,12}$/;
+        regpwdOne = reg.test(pwdValOne);
+    });
+
+    var num = 5;
+    var timer;
+    securityCode.addEventListener('click', () => {
+        clearInterval(timer);
+        //禁止再次点击
+        securityCode.style.pointerEvents = 'none';
+        setTimeout(function () {
+        }, 1000)
+        timer = setInterval(function () {
+            securityCode.innerHTML = `${num--}秒后重新发送`;
+            if (num < 0) {
+                num = 5;
+                clearInterval(timer);
+                securityCode.innerHTML = '获取验证码';
+                //恢复点击
+                securityCode.style.pointerEvents = 'auto';
+            }
+        }, 1000)
+    })
+
+    loginbtn.addEventListener('click', function () {
+        console.log(phoneVal);
+        console.log(regphone);
+        if (regphone == true && regimgcode == true && regnumcode == true && regusername && regpwd == true && regpwdOne == true) {
+            alert('注册成功')
+        } else {
+            alert('注册失败')
+        }
+    })
+</script>

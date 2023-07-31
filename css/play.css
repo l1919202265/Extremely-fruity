@@ -8,6 +8,7 @@ body iframe:nth-of-type(1) {
 body .play {
   width: 80%;
   margin: 10px auto;
+  background-color: #f7f7f7;
 }
 body .play > p {
   width: 100%;
@@ -40,7 +41,7 @@ body .play > ul > li a:hover {
 body .play .playPublic {
   margin-top: 20px;
 }
-body .play .playPublic p {
+body .play .playPublic > p {
   margin: 20px auto;
   text-align: center;
 }
@@ -55,6 +56,7 @@ body .play .playPublic .playPublicList li {
   height: 230px;
   margin: 10px 15px;
   border-radius: 10px;
+  box-shadow: 0 0 1px gray;
   overflow: hidden;
 }
 body .play .playPublic .playPublicList li img {
