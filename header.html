@@ -1,100 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <title>头部导航</title>
-    <style>
-        header nav {
-            height: 65px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            box-shadow: 0 0 3px gray inset;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <title>头部导航</title>
+        <style>
+            header nav {
+                height: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                box-shadow: 0 0 3px gray inset;
+            }
 
-        header nav img {
-            width: 132px;
-            height: 52px;
-            border-radius: 10px;
-        }
+            header nav img {
+                width: 132px;
+                height: 52px;
+                border-radius: 10px;
+            }
 
-        header nav ul {
-            width: 40%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
+            header nav ul {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
 
-        header nav ul li {
-            height: 100%;
-            padding: 0 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            font-size: 18px;
-        }
+            header nav ul li {
+                height: 100%;
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 18px;
+            }
 
-        header nav ul li:hover {
-            color: #fe5341;
-            cursor: pointer;
-        }
+            header nav ul li:hover {
+                color: #fe5341;
+                cursor: pointer;
+            }
 
-        header nav .container {
-            display: flex;
-            align-items: center;
-        }
+            header nav .container {
+                display: flex;
+                align-items: center;
+            }
 
-        header nav .container .search {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-            background: url(./css/img/search.png) no-repeat center center;
-        }
+            header nav .container .search {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                background: url(./css/img/search.png) no-repeat center center;
+            }
 
-        header nav .container .search:hover {
-            cursor: pointer;
-        }
+            header nav .container .search:hover {
+                cursor: pointer;
+            }
 
-        header nav .container .loginbtn {
-            width: 55px;
-            height: 35px;
-            color: #fe5341;
-            display: flex;
-            transition: .8s ease all;
-            align-items: center;
-            justify-content: space-around;
-            border-radius: 5px;
-            border: 2px solid #fe5341;
-        }
+            header nav .container .loginbtn {
+                width: 55px;
+                height: 35px;
+                color: #fe5341;
+                display: flex;
+                transition: .8s ease all;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: 5px;
+                border: 2px solid #fe5341;
+            }
 
-        header nav .container .loginbtn:hover {
-            color: white;
-            background-color: #fe5341;
-        }
-    </style>
-</head>
+            header nav .container .loginbtn:hover {
+                color: white;
+                background-color: #fe5341;
+            }
+        </style>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <img src="./img/header-logo@2x.png" alt="">
-            <ul>
-                <li><a href="./index.html">首页</a> </li>
-                <li> <a href="./play.html">酷玩</a></li>
-                <li> <a href="./shopping.html">导购</a></li>
-                <li> <a href="./try.html">试用</a></li>
-                <li> <a href="./report.html">报告</a></li>
-            </ul>
-            <div class="container">
-                <a class="search" href></a>
-                <a class="loginbtn" href="#">登录</a>
-            </div>
-        </nav>
-    </header>
-</body>
+    <body>
+        <header>
+            <nav>
+                <img src="./img/header-logo@2x.png" alt="">
+                <ul>
+                    <li><a href="./index.html" traget="_top">首页</a> </li>
+                    <li><a href="./play.html" traget="_top">酷玩</a></li>
+                    <li><a href="./shopping.html" traget="_top">导购</a></li>
+                    <li><a href="./try.html" traget="_top">试用</a></li>
+                    <li><a href="./report.html" traget="_top">报告</a></li>
+                </ul>
+                <div class="container">
+                    <a class="search" href></a>
+                    <a class="loginbtn" href="./index.html">登录</a>
+                </div>
+            </nav>
+        </header>
+    </body>
 
 </html>
